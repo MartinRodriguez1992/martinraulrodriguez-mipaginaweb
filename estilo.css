@@ -1,0 +1,435 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.barrasuperior {
+    padding: 1em 2em;
+}
+
+.primerafila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 3em 0;
+}
+
+
+
+.icono {
+    background-color: white;
+    border-radius: 5px;
+    margin: .7em .3em;
+    padding: .6em .7em;
+    height: 2.5em;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/*.whatsapp {
+    width: 13em;
+    margin-left: 1.5em;
+}/*******Profesor tengo problema con la clase del Whatsapp, para poder aplicarlo bien*******/
+
+#celular {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-left: .3em;
+}
+
+
+.nombre{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 4em;
+    position: absolute;
+    top: 0px;
+    left: 84%;
+}
+
+#reservas {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+#reservas:active, #reservas:visited, #reservas:link {
+    color: black;
+    text-decoration:none;
+}
+
+
+.menu {
+    display: flex;
+}
+
+#desplegar {
+    margin: auto;
+    position: relative;
+    top: -1.5em;
+}
+
+#contraer {
+    position: relative;
+    top: -6em;
+    margin: auto;
+    display: none;
+}
+
+#contraer:hover, #desplegar:hover {
+    box-shadow: 0px 0px 18px 7px blue;
+    color:blue;
+    background-color: white;
+    transition: 2.s;
+}
+
+.opciones {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: blue;
+    padding:0 .2em;
+    transition: .2s;
+}
+
+.opciones:hover {
+    -webkit-box-shadow:0px 0px 18px 7px rgba(0,48,168,0.58);
+    -moz-box-shadow: 0px 0px 18px 7px rgba(0,48,168,0.58);
+    box-shadow: 0px 0px 18px 7px rgba(0,48,168,0.58);
+    color:blue;
+    background-color: white;
+    padding:0 .2em;
+    transition: .2s;
+    border-radius: 14px;
+}
+
+.opciones1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding:0 .2em;
+    transition: .2s;
+}
+
+.opciones1:hover {
+    -webkit-box-shadow:0px 0px 18px 7px RED;
+    -moz-box-shadow: 0px 0px 18px 7px RED;
+    box-shadow: 0px 0px 18px 7px red;
+    color:blue;
+    background-color: white;
+    padding:0 .2em;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+#desplegable {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    top: -8em;
+    opacity:0;
+    transition: top, opacity 1s;
+}
+
+#menuHamburguesa {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    width: 20em;
+    margin: 2em;
+    position: relative;
+    top: -6em;
+    transition: all .5s;
+}
+
+.cuerpo{
+    background-image: url(images/1A.JPG);
+    min-height: 51em;
+}
+
+.divslogan {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 2em;
+text-align: center;
+background-color: white;
+margin: 20px;
+}
+
+.azul {
+    color: blue;
+}
+
+#varios {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 90em;
+    max-width: 50em;
+    margin: 10em auto;
+}
+
+#Hombre1, #Hombre2 {
+    width: 27em;
+    border-radius: 10px;
+    margin: 0 0 0 .60em;
+}
+
+#Mujer1, #Mujer2 {
+    width: 27em;
+    border-radius: 10px;
+    margin: 0 0 0 .60em;
+}
+
+#NIÑXS{
+    width: 27em;
+    border-radius: 10px;
+    margin: 0 0 0 .60em;
+}
+
+.footer{
+    background-color: blue;
+    margin-top: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerizquierda {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.footerderecha {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.textofooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    margin: .3em 0;
+}
+
+
+/****SLIDER****/
+
+.container-slider {
+    width: 50%;
+    max-width: 350px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 7px 10px blue;
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    height: 400px;
+    /*margin-left: -100%*/
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,.7);
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background: firebrick;
+}
+
+
+
+.slider__btn-left {
+        left: 10px;
+}
+
+
+.slider__btn-right {
+        right: 10px;
+}
+
+
+
+
+
+
+/****RESPONSIVE****/
+
+@media only screen and (max-width:1200px) {
+    body {
+        font-size: 12px;
+    }
+
+    .slogan {
+        font-size: 9em;
+    }
+
+    .nombre {
+        left: 77%;
+    }
+
+    #Hombre1, #Hombre2 {
+        width: 32.3em;
+      }
+  
+      #Mujer1, #Mujer2 {
+          width: 32.3em;
+      }
+  
+      #NIÑXS{
+          width: 32.3em;
+      }
+      
+      #varios {
+          width: 32.3em;
+      }
+
+}
+
+/*@media only screen and (max-width:1000px) {
+    .nombre {
+        font-size: 3em;
+    }
+
+    #Hombre1, #Hombre2 {
+      width: 26.7em;
+    }
+
+    #Mujer1, #Mujer2 {
+        width: 26.7em;
+    }
+
+    #NIÑXS{
+        width: 26.7em;
+    }
+    
+    #varios {
+        width: 26.7em;
+    }
+}*//************PROFESOR TENGO PROBLEMA CUANDO GIRO UN DISPOSITIVO MOVIL Y VEO MI PÁGINA WEB DE FORMA HORIZONTAL - NO ME QUEDA ORDENADA LAS FOTOS - NO ENCUENTRO EL ERROR EN ESTA PARTE*********************/
+
+@media only screen and (max-width:900px) {
+    .primerafila {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nombre {
+        left: 77%;
+    }
+
+    #Hombre1, #Hombre2 {
+        width: 74em;
+      }
+  
+      #Mujer1, #Mujer2 {
+          width: 74em;
+      }
+  
+      #NIÑXS{
+          width: 74em;
+      }
+      
+      #varios {
+          width: 40em;
+      }
+
+}
+
+@media only screen and (max-width:590px) {
+    .nombre {
+        font-size: 3em;
+    }
+
+    #Hombre1, #Hombre2 {
+      width: 48em;
+    }
+
+    #Mujer1, #Mujer2 {
+        width: 48em;
+    }
+
+    #NIÑXS{
+        width: 48em;
+    }
+    
+    #varios {
+        width: 48em;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .nombre {
+        font-size: 3em;
+    }
+
+    #Hombre1, #Hombre2 {
+      width: 35.2em;
+    }
+
+    #Mujer1, #Mujer2 {
+        width: 35.2em;
+    }
+
+    #NIÑXS{
+        width: 35.2em;
+    }
+    
+    #varios {
+        width: 35.2em;
+    }
+}
+
+
+
+
